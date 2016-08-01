@@ -1,0 +1,153 @@
+
+
+body {
+  background: url('images/bckgrnd.jpg');
+  text-align: center;
+}
+
+/* Question Box */
+
+.main_box {
+  display: block;
+  margin: 20px auto 0 auto;
+  height: 350px;
+  width: 550px;
+  background-color: #9DE0AD;
+}
+
+.question_text {
+  text-align: center;
+  padding: 40px 40px;
+  color: white;
+  font-size: 55px;
+  font-family: 'Open Sans';
+  line-height: 1.3em;
+}
+/* Fixes for SVGs */
+
+button {
+  border: 0;
+  display: inline;
+  font-family: 'Open Sans';
+}
+
+svg {
+  padding: 0;
+  margin-bottom: -10px;
+  display: inline-block;
+  color: white;
+  width: 50px;
+  height: 50px;
+  fill: white;
+}
+
+/* Add Card Button */
+
+.add_card {
+  color: #9fe222;
+  height: 90px;
+  width: 341px;
+  background-color: #88c3e8;
+  font-family: Open Sans;
+  font-size: 35px;
+  margin: 20px 20px 0 20px;
+}
+
+/* Answer Buttons */
+
+.answer_buttons {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.wrong {
+  background: url("images/wrong.png") no-repeat center center;
+  background-size: 80%;
+  height: 90px;
+  width: 90px;
+  margin-right: 10px;
+  background-color: #594F4F;
+}
+
+.flip {
+  position: relative;
+  top: -31px;
+  height: 90px;
+  width: 341px;
+  background-color: #45ADA8;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.right {
+  background: url("images/correct.png") no-repeat center center;
+  background-size: 85%;
+  height: 90px;
+  width: 90px;
+  margin-left: 10px;
+  background-color: #C44D58;
+}
+
+
+/* Footer Instuctions */
+
+.score {
+  color: white;
+  font-family: Open Sans;
+  font-size: 25px;
+  margin: -20px 0 20px 0;
+}
+
+.instructions {
+  color: white;
+  font-family: Open Sans;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+/* For Smaller Screen */
+
+@media (max-width: 800px) {
+  .main_box {
+    min-height: 250px;
+    height: auto;
+    width: 95%;
+  }
+  .add_card {
+    width: 60%;
+  }
+  .flip {
+    width: 50%;
+  }
+  .question_text {
+    font-size: 9vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .add_card {
+    width: 40%;
+    height: 60px;
+    font-size: 15px;
+  }
+  .flip {
+    width: 40%;
+    height: 60px;
+    top: -22px;
+    font-size: 15px;
+  }
+  img {
+    height: 30px;
+  }
+  .wrong, .right {
+    height: 60px;
+    width: 60px;
+  }
+  .wrong {
+    margin-right: 5px;
+  }
+  .right {
+    margin-left: 5px;
+  }
+}
